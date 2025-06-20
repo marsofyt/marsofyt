@@ -1,10 +1,11 @@
 'use client';
 
-import { useRef, useEffect, useState } from 'react';
-import * as THREE from 'three';
+import { useState } from 'react';
+import { BiMailSend } from "react-icons/bi";
 import { Robot } from '../3D';
-import { Environment, OrbitControls, Scroll, ScrollControls } from '@react-three/drei';
+import { OrbitControls } from '@react-three/drei';
 import { Canvas } from '@react-three/fiber';
+import { CiGift } from 'react-icons/ci';
 
 export function AboutCompany() {
     const [activeFeature, setActiveFeature] = useState(0);
@@ -74,7 +75,6 @@ export function AboutCompany() {
                         </div>
                     </div>
 
-                    {/* Right side - 3D Floating Technologies */}
                     <div className="">
                         <div className="w-full h-[500px]">
                             <Canvas
@@ -104,21 +104,43 @@ export function AboutCompany() {
                     </div>
                 </div>
 
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-20 pt-12 border-t border-gray-800">
+                <div className="mt-20 flex items-center justify-center gap-20 relative">
+                    <div className="absolute inset-0 bg-[radial-gradient(#1f1f1f_1px,transparent_1px)] [background-size:24px_24px] opacity-40 pointer-events-none z-0" />
+
+                    {[
+                        { icon: '<>', label: 'Conectar' },
+                        { icon: <BiMailSend size={'30px'} />, label: 'Enviar' },
+                        { icon: '$', label: 'Lucrar' },
+                        { icon: <CiGift size={'30px'} />, label: 'Celebrar' },
+                    ].map((item, i, arr) => (
+                        <div key={i} className="relative z-10 flex flex-col items-center">
+                            <div className="w-14 h-14 bg-[#0e0e0e] border border-[#2a2a2a] rounded-xl flex items-center justify-center text-2xl shadow-[0_8px_20px_0_rgba(0,255,255,0.3)]">
+                                {item.icon}
+                            </div>
+                            <span className="mt-3 text-sm text-gray-400">{item.label}</span>
+
+                            {i < arr.length - 1 && (
+                                <div className="absolute top-1/3 left-full w-16 h-px bg-gradient-to-r from-transparent via-cyan-500 to-transparent" />
+                            )}
+                        </div>
+                    ))}
+                </div>
+
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-20 pb-12 pt-12 border-t border-b border-gray-800">
                     <div className="text-center">
-                        <div className="text-4xl font-bold text-blue-400 mb-2">500+</div>
+                        <div className="text-4xl font-bold text-cyan-400 mb-2">500+</div>
                         <div className="text-gray-400">Projetos Concluídos</div>
                     </div>
                     <div className="text-center">
-                        <div className="text-4xl font-bold text-blue-400 mb-2">50+</div>
+                        <div className="text-4xl font-bold text-cyan-400 mb-2">50+</div>
                         <div className="text-gray-400">Clientes Satisfeitos</div>
                     </div>
                     <div className="text-center">
-                        <div className="text-4xl font-bold text-blue-400 mb-2">5</div>
+                        <div className="text-4xl font-bold text-cyan-400 mb-2">5</div>
                         <div className="text-gray-400">Anos de Experiência</div>
                     </div>
                     <div className="text-center">
-                        <div className="text-4xl font-bold text-blue-400 mb-2">24/7</div>
+                        <div className="text-4xl font-bold text-cyan-400 mb-2">24/7</div>
                         <div className="text-gray-400">Suporte Disponível</div>
                     </div>
                 </div>
