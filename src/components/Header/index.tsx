@@ -5,7 +5,7 @@ export function Header() {
                 <div className="w-6 h-6 bg-white rounded flex items-center justify-center">
                     <div className="w-3 h-3 bg-black rounded-sm"></div>
                 </div>
-                <span className="text-white font-semibold text-lg">LogoIpsum</span>
+                <span className="text-white font-semibold text-lg">MarSofyt</span>
             </div>
 
             <nav className="hidden md:flex items-center space-x-8">
