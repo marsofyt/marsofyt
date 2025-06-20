@@ -51,7 +51,7 @@ export function OurService() {
                     {services.map((service, index) => (
                         <div
                             key={index}
-                            className={`relative p-6 rounded-2xl bg-[#0e0e0e] border border-[#2a2a2a] hover:border-cyan-500 transition duration-300 shadow-sm ${service.destaque ? "bg-gradient-to-tr from-[#071c1c] to-[#0e1f1f]" : ""
+                            className={`relative p-6 rounded-2xl bg-[#0e0e0e] border border-[#2a2a2a] hover:border-cyan-500 transition duration-300 shadow-sm ${service.destaque ? "bg-gradient-to-tr from-[#066f6f] to-[#0e1f1f]" : ""
                                 }`}
                         >
                             {service.destaque && (
