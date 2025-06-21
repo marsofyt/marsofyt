@@ -1,5 +1,4 @@
-import { FaCode, FaLaptop, FaMobileAlt, FaCloud, FaTools } from "react-icons/fa";
-import { RiBugFill } from "react-icons/ri";
+import { FaCode, FaLaptop, FaMobileAlt, FaCloud, FaTools, FaRobot } from "react-icons/fa";
 
 export function OurService() {
     const services = [
@@ -30,9 +29,9 @@ export function OurService() {
             description: "Infraestrutura escalável e segura.",
         },
         {
-            icon: <RiBugFill size={24} />,
-            title: "Pentest web",
-            description: "Análise de vulnerabilidade web para o seu sistema.",
+            icon: <FaRobot size={24} />,
+            title: "Agentes de IA",
+            description: "Automatize atendimentos e tarefas com agentes de IA personalizados.",
         },
     ];
 
