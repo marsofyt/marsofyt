@@ -23,7 +23,7 @@ export function Header() {
                 className="block md:hidden text-2xl z-50 relative"
                 onClick={() => setIsOpen(!isOpen)}
             >
-                {isOpen ? <IoMdClose /> : <FiAlignJustify />}
+                {isOpen ? <IoMdClose color="#fff" /> : <FiAlignJustify color="#fff" />}
             </button>
 
             <nav className="hidden md:flex items-center space-x-8">
