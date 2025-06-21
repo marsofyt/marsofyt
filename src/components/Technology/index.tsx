@@ -47,8 +47,7 @@ export function Technology() {
     }, []);
 
     return (
-        <section className="min-h-screen bg-black relative overflow-hidden">
-            {/* Background flutuante */}
+        <section className="min-h-screen bg-black relative overflow-hidden" id="technology">
             <div className="absolute inset-0 z-0">
                 {mounted &&
                     [...Array(20)].map((_, i) => {
@@ -70,9 +69,7 @@ export function Technology() {
                     })}
             </div>
 
-            {/* Conteúdo principal */}
             <div className="relative z-10 flex flex-col-reverse md:flex-row items-center justify-center min-h-screen px-4 sm:px-6 md:px-20 py-16 gap-12">
-                {/* Ícones */}
                 <div className="w-full md:w-1/2 flex justify-center">
                     <div className="relative w-full max-w-md">
                         <div className="absolute inset-0 bg-gradient-to-r from-cyan-700/20 to-cyan-950/20 rounded-full blur-3xl transform scale-150"></div>
@@ -134,8 +131,6 @@ export function Technology() {
                         </div>
                     </div>
                 </div>
-
-                {/* Texto */}
                 <div className="w-full md:w-1/2 space-y-6 md:pl-12">
                     <div className="space-y-4">
                         <h2

@@ -37,7 +37,7 @@ export function OurService() {
     ];
 
     return (
-        <section className="min-h-screen bg-black flex flex-col justify-center items-center py-6 md:py-12">
+        <section className="min-h-screen bg-black flex flex-col justify-center items-center py-6 md:py-12" id="ourService">
             <div className="w-11/12 max-w-7xl">
                 <div className="space-y-4">
                     <h2 className="text-5xl font-bold bg-clip-text">
