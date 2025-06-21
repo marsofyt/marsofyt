@@ -5,6 +5,7 @@ import { useRef, useEffect, useState } from 'react';
 import * as THREE from 'three';
 import { Header } from '../Header';
 import { handleScrollToSection } from "@/utils/handleScrollSection";
+import { motion } from "framer-motion";
 
 export function About() {
     const mountRef = useRef<HTMLDivElement>(null);
@@ -127,12 +128,39 @@ export function About() {
             </div>
 
             <main className="relative z-20 flex flex-col items-center justify-center px-6 text-center pt-16">
-                <h1 className="text-6xl lg:text-8xl font-bold text-white mb-8 leading-tight tracking-tight">
+                {/* <h1 className="text-6xl lg:text-8xl font-bold text-white mb-8 leading-tight tracking-tight">
                     Softwares de qualidade
                     <br />
                     <span className="text-white">
                         que funciona para você
                     </span>
+                </h1> */}
+
+                <h1 className="text-6xl lg:text-8xl font-bold text-white mb-8 leading-tight tracking-tight">
+                    Softwares de{" "}
+                    <span className="relative">
+                        qualidade
+                        <svg
+                            viewBox="0 0 286 73"
+                            fill="none"
+                            className="absolute -left-2 -right-2 -top-2 bottom-0 translate-y-1"
+                        >
+                            <motion.path
+                                initial={{ pathLength: 0 }}
+                                whileInView={{ pathLength: 1 }}
+                                transition={{
+                                    //repeat: Infinity,
+                                    duration: 2,
+                                    ease: "easeInOut",
+                                    //repeatType: "mirror",
+                                }}
+                                d="M142.293 1C106.854 16.8908 6.08202 7.17705 1.23654 43.3756C-2.10604 68.3466 29.5633 73.2652 122.688 71.7518C215.814 70.2384 316.298 70.689 275.761 38.0785C230.14 1.37835 97.0503 24.4575 52.9384 1"
+                                stroke="#0f79a7"
+                                strokeWidth="3"
+                            />
+                        </svg>
+                    </span>{" "}
+                    que funciona para você
                 </h1>
 
                 <p className="text-lg text-gray-400 mb-12 max-w-2xl leading-relaxed">
