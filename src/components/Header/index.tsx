@@ -2,9 +2,11 @@ export function Header() {
     return (
         <header className="relative z-20 flex justify-between items-center p-6 lg:px-12" >
             <div className="flex items-center space-x-2">
-                <div className="w-6 h-6 bg-white rounded flex items-center justify-center">
-                    <div className="w-3 h-3 bg-black rounded-sm"></div>
-                </div>
+                <img
+                    src="./logo.png"
+                    alt="MarSofyt Logo"
+                    className="w-8 h-8 object-contain"
+                />
                 <span className="text-white font-semibold text-lg">MarSofyt</span>
             </div>
 
