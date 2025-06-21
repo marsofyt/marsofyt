@@ -1,4 +1,5 @@
 import { AboutCompany } from "@/components/AboutCompany";
+import Footer from "@/components/Footer";
 import { About } from "@/components/Home";
 import { OurService } from "@/components/OurService";
 import { SendMessage } from "@/components/SendMessage";
@@ -12,6 +13,7 @@ export default function Home() {
       <OurService />
       <Technology />
       <SendMessage />
+      <Footer />
     </div>
   );
 }
