@@ -148,12 +148,15 @@ export function About() {
                         </svg>
                     </button>
 
-                    <button className="cursor-pointer text-gray-400 hover:text-white transition-colors font-medium flex items-center">
+                    <a
+                        href="https://api.whatsapp.com/send?phone=5569992438222"
+                        target="_blank"
+                        className="cursor-pointer text-gray-400 hover:text-white transition-colors font-medium flex items-center">
                         <span className="mr-1">
                             Agendamento
                         </span>
                         <CiCalendar size={'24px'} />
-                    </button>
+                    </a>
                 </div>
             </main>
         </div>

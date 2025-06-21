@@ -13,19 +13,12 @@ export function Header() {
                 <a href="#" className="text-gray-400 hover:text-white transition-colors">Testimonials</a>
                 <a href="#" className="text-gray-400 hover:text-white transition-colors">Pricing</a>
                 <div className="flex items-center space-x-1">
-                    <a href="#" className="text-gray-400 hover:text-white transition-colors">Careers</a>
+                    <a href="https://api.whatsapp.com/send?phone=5569992438222" target="_blank" className="text-gray-400 hover:text-white transition-colors">Conversar</a>
                     <svg className="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                     </svg>
                 </div>
             </nav>
-
-            {/* <div className="flex items-center space-x-4">
-                <button className="text-gray-400 hover:text-white transition-colors">Sign up</button>
-                <button className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md transition-colors text-sm">
-                    Sign in
-                </button>
-            </div> */}
         </header >
     );
 }

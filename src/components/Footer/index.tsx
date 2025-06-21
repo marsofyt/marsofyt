@@ -73,7 +73,8 @@ export default function Footer() {
                             </li>
                             <li>
                                 <a
-                                    href="#"
+                                    href="https://www.instagram.com/marsofyt/"
+                                    target="_blank"
                                     className="flex items-center space-x-2 text-gray-400 hover:text-white transition-colors duration-200"
                                 >
                                     <FaInstagram className="w-4 h-4" />
@@ -100,7 +101,8 @@ export default function Footer() {
                             </li>
                             <li>
                                 <a
-                                    href="#"
+                                    href="https://github.com/marsofyt"
+                                    target="_blank"
                                     className="flex items-center space-x-2 text-gray-400 hover:text-white transition-colors duration-200"
                                 >
                                     <FaGithub className="w-4 h-4" />

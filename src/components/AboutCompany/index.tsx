@@ -10,6 +10,12 @@ import { CiGift } from 'react-icons/ci';
 export function AboutCompany() {
     const [activeFeature, setActiveFeature] = useState(0);
 
+    function randomSignedDecimal(min = 0.5, max = 1.5) {
+        const sign = Math.random() < 0.5 ? -1 : 1;
+        const value = Math.random() * (max - min) + min;
+        return parseFloat((value * sign).toFixed(1));
+    }
+
     const companyFeatures = [
         {
             title: "Inovação Tecnológica",
@@ -90,7 +96,7 @@ export function AboutCompany() {
                                     castShadow
                                 />
 
-                                <Robot scale={0.2} position={[0, -1.1, 0]} />
+                                <Robot scale={0.2} position={[0, -1.1, 0]} rotation={[0, Math.PI / randomSignedDecimal(), 0]} />
 
                                 <OrbitControls
                                     enableZoom={false}
@@ -126,7 +132,7 @@ export function AboutCompany() {
                     ))}
                 </div>
 
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-20 pb-12 pt-12 border-t border-b border-gray-800">
+                {/* <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-20 pb-12 pt-12 border-t border-b border-gray-800">
                     <div className="text-center">
                         <div className="text-4xl font-bold text-cyan-400 mb-2">500+</div>
                         <div className="text-gray-400">Projetos Concluídos</div>
@@ -143,7 +149,7 @@ export function AboutCompany() {
                         <div className="text-4xl font-bold text-cyan-400 mb-2">24/7</div>
                         <div className="text-gray-400">Suporte Disponível</div>
                     </div>
-                </div>
+                </div> */}
             </div>
         </section>
     );
