@@ -128,14 +128,6 @@ export function About() {
             </div>
 
             <main className="relative z-20 flex flex-col items-center justify-center px-6 text-center pt-16">
-                {/* <h1 className="text-6xl lg:text-8xl font-bold text-white mb-8 leading-tight tracking-tight">
-                    Softwares de qualidade
-                    <br />
-                    <span className="text-white">
-                        que funciona para você
-                    </span>
-                </h1> */}
-
                 <h1 className="text-6xl lg:text-8xl font-bold text-white mb-8 leading-tight tracking-tight">
                     Softwares de{" "}
                     <span className="relative">
