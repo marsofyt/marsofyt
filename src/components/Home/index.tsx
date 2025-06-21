@@ -4,6 +4,7 @@ import { CiCalendar } from "react-icons/ci";
 import { useRef, useEffect, useState } from 'react';
 import * as THREE from 'three';
 import { Header } from '../Header';
+import { handleScrollToSection } from "@/utils/handleScrollSection";
 
 export function About() {
     const mountRef = useRef<HTMLDivElement>(null);
@@ -141,7 +142,7 @@ export function About() {
                 </p>
 
                 <div className="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-6">
-                    <button className="bg-cyan-700 hover:bg-cyan-600 text-white px-6 py-3 rounded-md transition-colors flex items-center space-x-2 font-medium">
+                    <button onClick={() => handleScrollToSection("aboutCompany")} className="bg-cyan-700 hover:bg-cyan-600 text-white px-6 py-3 rounded-md transition-colors flex items-center space-x-2 font-medium">
                         <span>Saber mais</span>
                         <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
