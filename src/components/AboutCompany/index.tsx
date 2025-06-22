@@ -109,7 +109,7 @@ export function AboutCompany() {
                 </div>
 
                 <div className="mt-20 flex flex-wrap gap-10 justify-center items-center relative">
-                    <div className="absolute inset-0 bg-[radial-gradient(#1f1f1f_1px,transparent_1px)] [background-size:24px_24px] opacity-40 pointer-events-none z-0" />
+                    <div className="absolute inset-0 bg-[radial-gradient(#4f4f4f_1px,transparent_1px)] [background-size:24px_24px] opacity-40 pointer-events-none z-0" />
                     {[
                         { icon: '<>', label: 'Conectar' },
                         { icon: <BiMailSend size="30px" />, label: 'Enviar' },

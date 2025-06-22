@@ -3,33 +3,33 @@ import { FaCode, FaLaptop, FaMobileAlt, FaCloud, FaTools, FaRobot } from "react-
 export function OurService() {
     const services = [
         {
-            icon: <FaCode size={24} />,
+            icon: <FaCode size={24} color="#fff" />,
             title: "Desenvolvimento Web",
             description: "Criação de sites e sistemas responsivos.",
             destaque: true,
         },
         {
-            icon: <FaLaptop size={24} />,
+            icon: <FaLaptop size={24} color="#fff" />,
             title: "Aplicativos Desktop",
             description: "Soluções personalizadas para computadores.",
         },
         {
-            icon: <FaMobileAlt size={24} />,
+            icon: <FaMobileAlt size={24} color="#fff" />,
             title: "Desenvolvimento Mobile",
             description: "Apps nativos para Android e iOS.",
         },
         {
-            icon: <FaTools size={24} />,
+            icon: <FaTools size={24} color="#fff" />,
             title: "Manutenção de Sites",
             description: "Suporte a manutenção de sites.",
         },
         {
-            icon: <FaCloud size={24} />,
+            icon: <FaCloud size={24} color="#fff" />,
             title: "Serviços na Nuvem",
             description: "Infraestrutura escalável e segura.",
         },
         {
-            icon: <FaRobot size={24} />,
+            icon: <FaRobot size={24} color="#fff" />,
             title: "Agentes de IA",
             description: "Automatize atendimentos e tarefas com agentes de IA personalizados.",
         },
